@@ -4,7 +4,7 @@ Implementing neural network architectures from scratch in PyTorch for deep under
 
 ## Architectures
 
-### Transformer (Encoder-Decoder) — July 31, 2026
+### Transformer (Encoder-Decoder) — August 16, 2026
 
 Full implementation of the original "Attention Is All You Need" architecture.
 
