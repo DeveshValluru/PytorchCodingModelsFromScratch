@@ -1,8 +1,6 @@
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import math
 
 from transformer.encoder import Encoder
 from transformer.decoder import Decoder
@@ -32,7 +30,7 @@ class Transformer(nn.Module):
     tgt_pad_mask = (tgt != pad_tokens).unsqueeze(1).unsqueeze(2)
 
     seq_len = tgt.size(1)
-    causal_mask = torch.tril(torch.ones(seq_len, seq_len, device=tgt.device)).bool()
+    causal_mask = torch.tril(torch.ones(seq_len,seq_len, device = tgt.device)).bool()
     tgt_mask = tgt_pad_mask & causal_mask
     return tgt_mask
 

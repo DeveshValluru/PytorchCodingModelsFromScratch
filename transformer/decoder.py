@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import math
-from transformer.layers import FeedForward, PositionalEncoding
 
-from transformer.attention import MultiHeadAttention
+from layers.feed_forward import FeedForward
+from layers.positional_encoding import PositionalEncoding
+
+from layers.attention import MultiHeadAttention
 
 
 
